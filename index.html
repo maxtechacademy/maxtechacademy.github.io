@@ -10,12 +10,12 @@
   <meta content="" name="keywords">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="bootstrap.min.css"/>
-  <link rel="stylesheet" href="icofont.min.css"/>
-  <link rel="stylesheet" href="boxicons.min.css"/>
-  <link rel="stylesheet" href="venobox.css"/>
-  <link rel="stylesheet" href="aos.css"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+  <link rel="stylesheet" href="icofont/icofont.min.css"/>
+  <link rel="stylesheet" href="boxicons/css/boxicons.min.css"/>
+  <link rel="stylesheet" href="styles/venobox.css"/>
+  <link rel="stylesheet" href="styles/aos.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
     
   <!-- Google font -->
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Spectral SC'/>
@@ -29,13 +29,36 @@
       <!--script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script -->
     <!--[endif]-->
     
-  
-</head>
+  </head>
   <body>
-   
+    
+   <div class="d-flex" id="wrapper">
+    <!-- Sidebar start -->
+    			<div class=" border-right bg-dark" id="sidebar-wrapper">
+     			 		<div id="motto">
+        			<a href="index.html"><img src="Images/Logo.jpg" alt="Maxtech logo"/></a>
+     			 		  <hr class="line1">
+        			<h1 class="text-light">We maximize your potential</h1>
+     			 		 <hr class="line1">
+     			 		</div>
+     		 			<div class="list-group list-group-flush">
+      				 <a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-dashboard-web"></i> Dashboard</a>
+      				 <a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-hat"></i> Scholarship</a>
+      					<a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-read-book-alt"></i> Tutorials</a>
+      					<a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-mathematical-alt-2"></i> Math competition</a>
+     				 		<a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-data"></i> Overview</a>
+     				 </div>
+    				</div>
+    <!-- sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
 					<header>
-      <nav class="navbar navbar-expand-none navbar-light py-1 navbar-custom">
-        <h1><a href="index.html" class="navbar-brand" id="Logo">MCA</a></h1>
+      <nav class="navbar navbar-expand-none navbar-light border-bottom navbar-custom">
+        <button class="btn btn-dark"
+          id="menu-toggle"><i class="icofont-navigation-menu "></i>
+        </button>
+
         <button class="navbar-toggler" 
           type="button" 
           data-toggle="collapse" 
@@ -103,22 +126,32 @@
           </ul>
         </div>
       </nav>
-         			  
-  				<!-- Welcome note --> 
-  				<div class="d-flex flex-column justify-content-center align-items-center welcome">
+     </header>
+  				<!--Breadcrumb start >
+ 					<section>
+ 							<div class="container" data-aos="fade-in">
+ 					 				<nav aria-label="breadcrumb">
+    								<ol class="breadcrumb primary-color justify-content-center">
+      								<li class="breadcrumb-item active"><a class="white-text" href="index.html">Home</a></li>
+   					 				</ol>
+  								</nav>
+			 				</div> 
+ 					 </section>
+ 		 		 < Breadcrumb end -->
+ 		
     
+  				<!-- Welcome note --> 
+  				<section class="d-flex flex-column justify-content-center align-items-center welcome">    
     				<div class="container text-center welcome-text" data-aos="zoom-in-left">
       				<hr class="line">
       				<h1>Maxtech Computer Academy</h1>
      				 <hr class="line">
       				<h2 class="text-light">We are an IT based individuals committed to helping you learn all you need to in the world of computers.<br><span><em>Become a certified computer programmer, graphics designer and web developer in just 6 months with zero programming experience!</em></span>.<br> Just a click below and your are in! </h2>
-     						 <div class="d-flex align-items-center justify-content-center">
-     
+     						 <div class="d-flex align-items-center justify-content-center">     
         					<a href="index.html" class="button">Click here!</a>
      							</div>
     					</div>
-    </div>
-    </header>
+ 						</section>
  		 		  <!-- Welcome end -->
  		 		   
  		 		   
@@ -136,7 +169,7 @@
           <h2 data-aos="fade-up" class="text-center">Web design and development</h2>           		
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Web developer">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Web developer">
               		<ul>
                 		<li><a href="#">Course content </a></li>
              					<li><button class="btn btn-primary" onclick="sweetalert1 ()">Requirements </button></li>
@@ -151,7 +184,7 @@
       				  <h2  data-aos="fade-up" class="text-center">Android software development</h2>            		
          	 <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Application developer">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Application developer">
               		<ul>
                 		<li><a href="#">Course content </a></li>
                 		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
@@ -166,7 +199,7 @@
       			  <h2 data-aos="fade-up"   class="text-center">Graphics Design</h2>            
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Graphics artist">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Graphics artist">
               		<ul>
                 		<li><a href="#">Course content </a></li>
                 		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
@@ -182,7 +215,7 @@
       				  <h2 data-aos="fade-up"  class="text-center">Computer programming</h2>           
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="Program.jpg" alt="Programmer">
+             		 <img data-aos="fade-up" src="Images/Program.jpg" alt="Programmer">
               		<ul>
                 		<li><a href="#">Course outline </a></li>
                 		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
@@ -198,7 +231,7 @@
       				  <h2  data-aos="fade-up" class="text-center">General Computer training</h2>           
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="MS word user">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="MS word user">
               		<ul>
                 		<li><a href="#">Course content </a></li>
                 		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
@@ -214,7 +247,7 @@
       				  <h2  data-aos="fade-up" class="text-center">Electronics Repair and servicing</h2>            	
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="Service.jpg" alt="Motherboard service">
+             		 <img data-aos="fade-up" src="Images/Service.jpg" alt="Motherboard service">
               		<ul>
                 		<li><a href="#">Course content </a></li>
                 		<li><button class="btn btn-primary" onclick="sweetalert2 ()">Requirements </button></li>
@@ -283,8 +316,7 @@
       		</div>
 
       <div class="contact"	>		
-      <div class="container">
-      
+      <div class="container">      
         <div class="row no-gutters justify-content-center" data-aos="fade-up">
 
           <div class="col-lg-5 d-flex align-items-stretch">
@@ -320,20 +352,20 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" aria-label="name" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" aria-label="email"/>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" aria-label="email-subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" aria-label="your-message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -348,36 +380,37 @@
         </div>
 
       </div>
-      </div>
-<!-- End Contact Section -->
+      </div><!-- End Contact Section -->
 
       
      </section>    	    		    
- 		 </main> 	  
+ 		 </main> 
+   
+		</div>  <!-- page content wrapper end -->		  
      
       <!-- footer start -->
- 		 		  <footer id="footer" class="footer">				
+ 		 		  <footer id="footer" class="footer fixed-bottom">				
   				 				<div class="social-links text-center text-lg-right pt-1 pt-lg-0">
        				 <a href="#" class="twitter"><i class="bx bxl-twitter" aria-label="twitter"></i></a>
        				 <a href="#" class="facebook"><i class="bx bxl-facebook" aria-label="facebook"></i></a>
        				 <a href="#" class="instagram"><i class="bx bxl-instagram" aria-label="instagram"></i></a>
        				 <a href="#" class="google-plus"><i class="bx bxl-skype" aria-label="skype"></i></a>
-       				 <a href="#" class="linkedin"><i class="bx bxl-linkedin" aria-label="linkedin"></i></a>
-  				 				   				 				  
-          </div>
- 
+       				 <a href="#" class="linkedin"><i class="bx bxl-linkedin" aria-label="linkedin"></i></a>  				 				   				 				  
+          </div> 
 							</footer>
  		 		   <!-- footer end -->
-          
+      
+</div> <!-- wrapper end -->
+       
 
     <!-- Javascripts -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="jquery.sticky.js"></script>
-    <script src="venobox.min.js"></script>
-    <script src="aos.js"></script>
-				<script src="scripts.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/jquery.sticky.js"></script>
+    <script src="scripts/venobox.min.js"></script>
+    <script src="scripts/aos.js"></script>
+				<script src="scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         		            
     
