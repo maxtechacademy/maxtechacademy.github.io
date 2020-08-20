@@ -100,14 +100,65 @@ input, select {
 /*----------------------
  side and nav bar 
 ----------------------*/
+#wrapper {
+    overflow-x: hidden;
+ }
 
-.navbar-brand {
-  font-size: 100%;
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper img {
+  width:100%;
+  border: 3px solid #6495ed;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -o-border-radius: 3px;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+
+#motto h1 {
+  font-size: 120%;
+  margin: 3px;
+  padding: 4px 0;
   line-height: 1;
   font-weight: 700;
   font-family: Staatliches;
   text-align: center;
   letter-spacing:1;
+}
+
+@media (min-width: 1024px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
 }
 
 .navbar .navbar-collapse {
@@ -143,12 +194,12 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000'
 .welcome{
   width: 100%;
   height:50vh;
-  background: url("Brain.jpg") center center;
+  background: url("../Images/Brain.jpg") center center;
   background-size: cover;
   position: relative;
   z-index: 1;
   padding: 0;
-  margin-top:0;
+  margin-top: 0;
 }
 
 .welcome:before {
@@ -337,7 +388,8 @@ programmes
   color:#6495ed;
 }
 
-.programmes a{
+.programmes a:hover, a:focus{
+  background: aqua;
   text-decoration: none;
 }
 
@@ -510,7 +562,7 @@ footer
 ------*/
 
 .footer {
-  background-color: #FFFFFF;
+  background-color: white;
   padding-top: 0px;
   color: #313030;
 }
