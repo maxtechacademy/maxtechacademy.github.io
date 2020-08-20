@@ -247,7 +247,7 @@ hr.line1 {
 @media (max-height: 768px) {
   .welcome {
     margin-bottom: -150px;
-    height:75vh;
+    height:80vh;
   } 
   .welcome h1 {
     font-size:25px;
@@ -256,7 +256,7 @@ hr.line1 {
 
 @media (max-width: 768px) {
   .welcome {
-    height: 75vh;
+    height: 80vh;
   }
   .welcome h1 {
     font-size: 25px;
