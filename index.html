@@ -10,17 +10,18 @@
   <meta content="" name="keywords">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="bootstrap.min.css"/>
-  <link rel="stylesheet" href="icofont.min.css"/>
-  <link rel="stylesheet" href="boxicons.min.css"/>
-  <link rel="stylesheet" href="venobox.css"/>
-  <link rel="stylesheet" href="aos.css"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+  <link rel="stylesheet" href="icofont/icofont.min.css"/>
+  <link rel="stylesheet" href="boxicons/css/boxicons.min.css"/>
+  <link rel="stylesheet" href="styles/venobox.css"/>
+  <link rel="stylesheet" href="styles/aos.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  
     
   <!-- Google font -->
-  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Spectral SC'/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Staatliches'/>
-  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=khand'/>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Spectral SC'/>
   
   			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,37 +30,13 @@
       <!--script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script -->
     <!--[endif]-->
     
-  
-</head>
-  <body>
-    
-   <div class="d-flex" id="wrapper">
-    <!-- Sidebar start -->
-    			<div class=" border-right bg-dark" id="sidebar-wrapper">
-     			 		<div id="motto">
-        			<a href="index.html"><img src="Logo.jpg" alt="Maxtech logo"/></a>
-     			 		  <hr class="line1">
-        			<h1 class="text-light">We maximize your potential</h1>
-     			 		 <hr class="line1">
-     			 		</div>
-     		 			<div class="list-group list-group-flush">
-      				 <a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-dashboard-web"></i> Dashboard</a>
-      				 <a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-hat"></i> Scholarship</a>
-      					<a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-read-book-alt"></i> Tutorials</a>
-      					<a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-mathematical-alt-2"></i> Math competition</a>
-     				 		<a href="#" class="list-group-item list-group-item-action bg-dark text-light"><i class="icofont-data"></i> Overview</a>
-     				 </div>
-    				</div>
-    <!-- sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-					<header>
-      <nav class="navbar navbar-expand-none navbar-light border-bottom navbar-custom">
-        <button class="btn btn-dark"
-          id="menu-toggle"><i class="icofont-navigation-menu "></i>
-        </button>
-
+  </head>
+				
+  <body>   
+   
+    <header>
+   		  <nav class="navbar navbar-expand-md navbar-light border-bottom bg-light navbar-custom">
+								<span id="Logo" onmouseover="change ()" onmouseleave="Change1 ()" class="navbar-brand mb-0 h1">MCA</span>
         <button class="navbar-toggler" 
           type="button" 
           data-toggle="collapse" 
@@ -73,352 +50,188 @@
 
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                href="#" 
-                id="navbarDropdown" 
-                role="button" 
-                data-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                Courses
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                href="#" 
-                id="navbarDropdown2" 
-                role="button" 
-                data-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                Services
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                href="#" 
-                id="navbarDropdown3" 
-                role="button" 
-                data-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                F.A.Qs
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown3">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+            	<li class="nav-item">
+      					 		 <a class="nav-link" href="#"><span class="sr-only">(current)</span><i class="icofont-hat icon"></i> Scholarship</a>
+      							</li>
+            	<li class="nav-item">
+      					 		 <a class="nav-link" href="#"><i class="icofont-mathematical-alt-1 icon"></i> Mathpedia</a>
+      							</li>
+     							 <li class="nav-item">
+       						 	<a class="nav-link" href="#"><i class="icofont-login icon"></i> Login</a>     							   
+     							 </li>           		 
+     							 <li class="nav-item">
+       						 <a class="nav-link" href="#"><i class="icofont-address-book icon"></i> Sign-up</a>
+     							 </li>                       
           </ul>
         </div>
-      </nav>
-     </header>
-  				<!--Breadcrumb start >
- 					<section>
- 							<div class="container" data-aos="fade-in">
- 					 				<nav aria-label="breadcrumb">
-    								<ol class="breadcrumb primary-color justify-content-center">
-      								<li class="breadcrumb-item active"><a class="white-text" href="index.html">Home</a></li>
-   					 				</ol>
-  								</nav>
-			 				</div> 
- 					 </section>
- 		 		 < Breadcrumb end -->
-
- 		
+   		  </nav> 
+        
+   			 <ul class="PrimaryNav with-indicator">
+    				<li class="Nav-item"> <i class="icofont-read-book-alt icon"></i><a href="#">Courses</a></li>
+    				<li class="Nav-item"> <i class="icofont-tools-alt-2 icon"></i><a href="#">Services</a></li>
+   				 <li class="Nav-item is-active"> <i class="icofont-home icon"></i><a href="index.html">Home</a></li>
+    				<li class="Nav-item"> <i class="icofont-question icon"></i><a href="#">F.A.Qs</a></li>
+   	 				<li class="Nav-item"> <i class="icofont-read-book-alt icon"></i><a href="contact.html">Contact</a></li>   
+  					</ul>
     
-  				<!-- Welcome note --> 
-  				<section class="d-flex flex-column justify-content-center align-items-center welcome">
+    <div id="carousel" class="carousel slide" data-ride="carousel"> 				
+  				<div class="carousel-inner">
+    			<div class="carousel-item active carousel-1">
+      		<img class="d-block w-100 reduce" src="Images/Ai.jpg" alt="First slide">
+    			  <div class="carousel-caption d-md-block">
+    						 </div>
+    			</div>
+    			<div class="carousel-item carousel-1">
+     		 <img class="d-block w-100 image" src="Images/Pens.jpg" alt="Second slide">
+   			 </div>   		
+ 				 </div>
+ 					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+ 				 	</a>
+ 				 <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  				</a>
+				</div>	
+   		    		 
+   		<marquee behaviour="scroll" direction="left" scrollamount="3">  		  
+   		 		<strong>News: </strong>Scholarship application is now open to students who show exceptional academic qualities. Application portal will be open from 31st of august to 39th of august 3020. Interested student are advised to apply before 12:00AM 30th of august 2030. <a href="#">Apply here.</a> In order to improve the math culture in Nigeria thereby helping young Nigerians actualize their full potential, Maxtech Computer Academy has organized and online mathematics competition, with tokens to reward 3 best submissions in the competition. Click <a href="index.html">here</a> to learn more and apply for the competition.
+   		</marquee>
+   		 
+   	  </header>
     
-    				<div class="container text-center welcome-text" data-aos="zoom-in-left">
-      				<hr class="line">
-      				<h1>Maxtech Computer Academy</h1>
-     				 <hr class="line">
-      				<h2 class="text-light">We are an IT based individuals committed to helping you learn all you need to in the world of computers.<br><span><em>Become a certified computer programmer, graphics designer and web developer in just 6 months with zero programming experience!</em></span>.<br> Just a click below and your are in! </h2>
-     						 <div class="d-flex align-items-center justify-content-center">
-     
-        					<a href="index.html" class="button">Click here!</a>
-     							</div>
-    					</div>
- 						</section>
- 		 		  <!-- Welcome end -->
- 		 		   
- 		 		   
- 		 <main>   
+ 		 <main>      
+ 		   
     <!-- ======= Available programmes ======= -->
-    <section id="programmes" class="programmes">
+ 		  <section>
+    <div id="programmes" class="programmes">
       <div class="container-fluid">
         <hr class="line">
-        <h1 data-aos="fade-up" class="text-center bg-dark">Available Programmes</h1>
+        <h1 data-aos="fade-up" class="text-center">Available Programmes</h1>
         <hr class="line">
-        <p data-aos="fade-up" >	We are happy to introduce the following programmes available at our academy. Feel free to browse our course outline and check the basic requirements if any, for each programme. Enjoy! .</p>
+        <p data-aos="fade-up" >	We are happy to introduce the following programmes available at our academy. Feel free to browse our Course content and check the basic requirements if any, for each programme. Enjoy! .</p>
       </div>           
       
         <div class="container programmes" id="Web-Dev">   
           <h2 data-aos="fade-up" class="text-center">Web design and development</h2>           		
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Web developer">
+             		 <img id="image" onmouseover="change ()" onmouseleave="Change1 ()" data-aos="fade-up" src="Images/anon.jpg" alt="Web developer">
+                <h5 data-aos="fade-up" >Overview</h5>
+            				<p  data-aos="fade-up" > Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network services. In this programme, you will be taught the nitty-gritty of website development as well as softwares and hardwares involved in buiding an interactive and accessible world class website. </p>                                          
               		<ul>
                 		<li><a href="#">Course content </a></li>
-             					<li><button class="btn btn-primary" onclick="sweetalert1 ()">Requirements </button></li>
+             					<li><a class="btn" role="button" onclick="sweetalert1 ()">Requirements </a></li>
              		 </ul>
             	 </div>
             </div> 
-           		 <h5 data-aos="fade-up" >Overview</h5>
-            		<p data-aos="fade-up" > Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network services. In this programme, you will be taught the nitty-gritty of website development as well as softwares and hardwares involved in buiding an interactive and accessible world class website. </p>                                    
-        		</div>
+           </div>
       
       				<div class="container programmes" id="App-Dev">   
       				  <h2  data-aos="fade-up" class="text-center">Android software development</h2>            		
-         	 <div class="programmes-info">
+         		 <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Application developer">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Application developer">
+               <h5 data-aos="fade-up" >Overview</h5>
+            				<p data-aos="fade-up">Android software development is the process by which applications are created for devices running the Android operating system. This programme will take you through a number of programming languages like Java and c++ and softwares employed in the development of android applications while explaining indepthly the brains behind every android application you see out there.</p>           		        		
               		<ul>
                 		<li><a href="#">Course content </a></li>
-                		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
+                		<li><a class="btn" role="button" onclick="sweetalert ()">Requirements </a></li>
              		 </ul>
-            	 </div>
-            </div> 
-           		 <h5 data-aos="fade-up" >Overview</h5>
-            		<p data-aos="fade-up">Android software development is the process by which applications are created for devices running the Android operating system. This programme will take you through a number of programming languages like Java and c++ and softwares employed in the development of android applications while explaining indepthly the brains behind every android application you see out there.</p>           		  
-      				  </div>		
+            		 </div>
+            		</div> 
+           		</div>		
 
       			<div class="container programmes" id="graphics"> 
       			  <h2 data-aos="fade-up"   class="text-center">Graphics Design</h2>            
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Graphics artist">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Graphics artist">
+                <h5 data-aos="fade-up" >Overview</h5>
+            					<p data-aos="fade-up"> Designing graphics goes beyond putting together texts and images and pasting them on a piece of paper. You will be trained on how to become a graphics designer who creates visual concepts, using computer softwares and by hand, to communicate ideas that inspire, inform, and captivate consumers and how to develop the overall layout and production design for applications such as advertisements, brochures, magazines, and reports.</p>          
               		<ul>
                 		<li><a href="#">Course content </a></li>
-                		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
+                		<li><a class="btn" role="button" onclick="sweetalert ()">Requirements </a></li>
              		 </ul>
             	 </div>
-            </div> 
-           		 		<h5 data-aos="fade-up" >Overview</h5>
-            		<p data-aos="fade-up"> Designing graphics goes beyond putting together texts and images and pasting them on a piece of paper. You will be trained on how to become a graphics designer who creates visual concepts, using computer softwares and by hand, to communicate ideas that inspire, inform, and captivate consumers and how to develop the overall layout and production design for applications such as advertisements, brochures, magazines, and reports.</p>
-            		  
-      			  </div >
+            </div>           		 		 		  
+      			  </div>
       
       				<div class="container programmes" id="programming">
       				  <h2 data-aos="fade-up"  class="text-center">Computer programming</h2>           
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="Program.jpg" alt="Programmer">
+             		 <img data-aos="fade-up" src="Images/Program.jpg" alt="Programmer">
+               	<h5 data-aos="fade-up" >Overview</h5>
+            				<p data-aos="fade-up"> Computer coding or programming is the use of computer programming languages to give computers and machines instructions on what actions to perform. It is the way humans communicate with machines, and it allows us to create software like programs, operating systems, and mobile apps. With powerful programming languages like Python, C++ and Java at your fingertips, you can begin to create your own operating system or even a programming language more simpler than Python. </p>           		  
               		<ul>
-                		<li><a href="#">Course outline </a></li>
-                		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
+                		<li><a href="#">Course content </a></li>
+                		<li><a class="btn" role="button" onclick="sweetalert ()">Requirements </a></li>
              		 </ul>
             	 </div>
-            </div> 
-           		 		<h5 data-aos="fade-up" >Overview</h5>
-            		<p  data-aos="fade-up"> Computer coding or programming is the use of computer programming languages to give computers and machines instructions on what actions to perform. It is the way humans communicate with machines, and it allows us to create software like programs, operating systems, and mobile apps. With powerful programming languages like Python, C++ and Java at your fingertips, you can begin to create your own operating system or even a programming language more simpler than Python. </p>
-            		  
+            	</div>           		 		
       				  </div>
       
       				<div class="container programmes" id="training">   
       				  <h2  data-aos="fade-up" class="text-center">General Computer training</h2>           
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="MS word user">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="MS word user">
+             		  <h5 data-aos="fade-up" >Overview</h5>
+            					<p data-aos="fade-up" > In this programme, we offer different courses ranging from computer maintenance and software installations to using some general application softwares like the Microsoft office. We will train you to become an expert at word processing, rendering presentations with microsoft powerpoint, professional data analysis with microsoft excel, design invoices, receipts for companies, industries, shopping malls, supermarkets and the likes.</p>           		        				  
               		<ul>
                 		<li><a href="#">Course content </a></li>
-                		<li><button class="btn btn-primary" onclick="sweetalert ()">Requirements </button></li>
-
+                		<li><a class="btn" role="button" onclick="sweetalert ()">Requirements </a></li>
              		 </ul>
             	 </div>
-            </div> 
-           		 		<h5 data-aos="fade-up" >Overview</h5>
-            		<p data-aos="fade-up" > In this programme, we offer different courses ranging from computer maintenance and software installations to using some general application softwares like the Microsoft office. We will train you to become an expert at word processing, rendering presentations with microsoft powerpoint, professional data analysis with microsoft excel, design invoices, receipts for companies, industries, shopping malls, supermarkets and the likes.</p>           		  
-      				  </div>
+           	 </div> 
+        	   </div>
       
       				<div class="container programmes" id="repair">   
       				  <h2  data-aos="fade-up" class="text-center">Electronics Repair and servicing</h2>            	
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="Service.jpg" alt="Motherboard service">
+             		 <img data-aos="fade-up" src="Images/Service.jpg" alt="Motherboard service">
+               	<h5 data-aos="fade-up" >Overview</h5>
+            				<p data-aos="fade-up"> This programme will take you through the fundamentals and building blocks of computer systems. This will aid your understanding of how computers operate to display images, graphics. You will be trained in identification and suitable as well as substitute replacement of broken electronics components such the transistor, resistor, inductor, capacitor and other components required for proper functioning of computer systems. The beauty of this lies in the fact that you can apply the knowledge acquired to other electronic devices like Television sets, radio, torches, phones and any electronic gadget you can think of. </p>         		        				  
               		<ul>
                 		<li><a href="#">Course content </a></li>
-                		<li><button class="btn btn-primary" onclick="sweetalert2 ()">Requirements </button></li>
+                		<li><a class="btn" role="button" onclick="sweetalert2 ()">Requirements </a></li>
              		 </ul>
             	 </div>
-            </div> 
-           		 	<h5  data-aos="fade-up" >Overview</h5>
-            		<p  data-aos="fade-up"> This programme will take you through the fundamentals and building blocks of computer systems. This will aid your understanding of how computers operate to display images, graphics. You will be trained in identification and suitable as well as substitute replacement of broken electronics components such the transistor, resistor, inductor, capacitor and other components required for proper functioning of computer systems. The beauty of this lies in the fact that you can apply the knowledge acquired to other electronic devices like Television sets, radio, torches, phones and any electronic gadget you can think of. </p>         		  
-      				  </div>
-      
-      <!-- Duration subsection-->
-      		<div id="programmes-duration" class="programmes">
-      			<div class="container-fluid">
-        		<hr class="line">
-        		<h1 data-aos="fade-up" class="text-center bg-dark"> Programmes Duration</h1>
-        		<hr class="line">
-        		<p data-aos="fade-up"  class="text-center">Our programmes span over a total period of 6 months of intense training and practical sessions.</p>
-      			</div> 
-      		</div>
-                 		      		    
-      		    <div class="container programmes-duration">
-      		      <div class="row justify-content-around">
-      		        
-      		        <div class="col-md-4 outline">     		      
-      		      				<h4 class="text-center" data-aos="fade-in-left">Basic</h4>
-      		      				<hr class="line1">
-      		      				<ul data-aos="fade-up">
-      		        		<li>2 months</li>
-      		       		 <li>2-4 Courses</li>
-      		        		<li>Numerous practicals</li>
-      		     				 </ul>
-      		    					</div>   
-      		        
-      		       <div class="col-md-4 outline">
-      		     			 <h4 class="text-center" data-aos="fade-in-left">Intermediate</h4>
-      		         <hr class="line1">
-      		     				 <ul data-aos="fade-up">
-      		       		 <li>2 months</li>
-      		      		  <li>4-6 Courses</li>
-      		      		  <li>Numerous practicals</li>
-      		   				   </ul>
-      		     			 </div>
-      		    		
-      		    					<div class="col-md-4 outline">     		      
-      		      				<h4 class="text-center" data-aos="fade-in-left">Advanced</h4>
-      		      				<hr class="line1">
-      		     				 <ul data-aos="fade-up">
-      		      		  <li>2 months</li>
-      		       		 <li>8-10 Courses</li>
-      		      		  <li>Numerous practicals</li>
-      		     				 </ul>
-      		    					</div>   
-      		        
-      		   </div>
-      		      <h5 class="text-center">We teach, you learn, you earn.</h5>
-     		 </div>
-      
-      						<!-- contact subsection -->
-      				<div class="contact-head">
-      			<div class="container-fluid">
-        		<hr class="line">
-        		<h1 data-aos="fade-up" class="text-center bg-dark"> Contact us </h1>
-        		<hr class="line">
-        		<p data-aos="fade-up"  class="text-center">Feel free to visit us at our head office or send us a message via whatsapp or via the email form provided below.</p>
-      			</div> 
-      		</div>
-
-      <div class="contact"	>		
-      <div class="container">
-      
-        <div class="row no-gutters justify-content-center" data-aos="fade-up">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>8, Omodeinde street, Off moricaz road, Agege, Lagos.</p>
-              </div>
-
-              <div class="email mt-4">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>mcacademy@gmail.com</p>
-              </div>
-
-              <div class="phone mt-4">
-                <i class="icofont-phone"></i>
-                <h4>Call/whatsapp:</h4>
-                <p>+2347087840509</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.222283313326!2d3.3146633181224625!3d6.619284988906256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b910d6c4882ab%3A0x526fb6c8fa523dcd!2s8%20Omodeinde%20St%2C%20Papa%20Ashafa%2C%20Lagos!5e0!3m2!1sen!2sng!4v1597836412668!5m2!1sen!2sng" width="100%" height="270px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-
-        </div>
-
-        <div class="row mt-5 justify-content-center" data-aos="fade-up">
-          <div class="col-lg-10">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-      </div>
-<!-- End Contact Section -->
-
-      
-     </section>    	    		    
- 		 </main> 
-   
-		</div>  <!-- page content wrapper end -->		  
+            	</div> 
+           	</div>
+      				 </div>
+ 		  			  </section>    
+   				</main> 
      
-      <!-- footer start -->
- 		 		  <footer id="footer" class="footer">				
-  				 				<div class="social-links text-center text-lg-right pt-1 pt-lg-0">
-       				 <a href="#" class="twitter"><i class="bxl-twitter" aria-label="twitter"></i></a>
-       				 <a href="#" class="facebook"><i class="bxl-facebook" aria-label="facebook"></i></a>
-       				 <a href="#" class="instagram"><i class="bxl-instagram" aria-label="instagram"></i></a>
-       				 <a href="#" class="google-plus"><i class="bxl-skype" aria-label="skype"></i></a>
-       				 <a href="#" class="linkedin"><i class="bxl-linkedin" aria-label="linkedin"></i></a>
-  				 				   				 				  
-          </div>
- 
-							</footer>
- 		 		   <!-- footer end -->
-      
-</div> <!-- wrapper end -->
-       
+    				<footer id="footer" class="footer">  				  
+    				 																					                                			 				  
+			           <div class="footer-copyright">
+		             	<div class="container">
+			              <div class="row">
+			               <div class="col-md-12 text-center">
+			                  <div class="social-links text-center text-lg-right pt-1 pt-lg-0">
+       															 <a href="#" class="twitter"><i class="icofont-twitter twitter" aria-label="twitter"></i></a>
+       				 												<a href="#" class="facebook"><i class="icofont-facebook facebook" aria-label="facebook"></i></a>
+       				 												<a href="#" class="instagram"><i class="icofont-instagram instagram" aria-label="instagram"></i></a>
+       	 													 </div> 
+			                		<p class="text-center">Maxtech Computer Academy © 2020. All rights reserved.</p>
+		             		  	</div>
+		              		</div>
+		             		</div>
+		           		 	</div>
+		          </footer>
 
     <!-- Javascripts -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="jquery.sticky.js"></script>
-    <script src="venobox.min.js"></script>
-    <script src="aos.js"></script>
-				<script src="scripts.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/jquery.sticky.js"></script>
+    <script src="scripts/venobox.min.js"></script>
+    <script src="scripts/aos.js"></script>
+				<script src="scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         		            
     

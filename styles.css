@@ -1,266 +1,125 @@
-/*--------------
- General 
---------------*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-  			font-family: Spectral SC;
+html, body {
+  font-family:Spectral Sc;
 }
+/*--------
+nav bar 
+----------*/
 
-body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/*----------------------
- side and nav bar 
-----------------------*/
-#wrapper {
-    overflow-x: hidden;
- }
-
-#sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
-}
-
-#sidebar-wrapper img {
-  width:100%;
-  border: 3px solid #6495ed;
-  border-radius:3px;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  -o-border-radius: 3px;
-}
-
-#sidebar-wrapper .list-group {
-  width: 15rem;
-}
-
-#page-content-wrapper {
-  min-width: 100vw;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
-}
-
-
-#motto h1 {
-  font-size: 120%;
+#Logo {
+  font-size: 150%;
   margin: 3px;
   padding: 4px 0;
   line-height: 1;
   font-weight: 700;
   font-family: Staatliches;
   text-align: center;
-  letter-spacing:1;
-}
-
-@media (min-width: 1024px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
-
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
+  letter-spacing:2px;
+  color:#e82d00;
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+  text-align: center; 
 }
 
 .navbar.navbar-custom .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=e82d00');
 }
 
-.navbar .navbar-nav {
+navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
 }
 
 .navbar .navbar-nav a:hover, a:focus{
-  background:#6495ed;
+  background:#ff7f50;
+  text-transform: uppercase;
+  transition: 1s ease-out;
+  color:#fff;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size:100%;
+  font-family: Oswald;
+}
+@media screen and (min-height: 1024px){
+  .navbar .navbar-nav .nav-link {
+    font-size:150%;
+  }
+  #Logo {
+    font-size: 300%;
+    letter-spacing: 4px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .navbar .navbar-nav .nav-link {
+    font-size:150%;
+  }
+  #Logo {
+    font-size: 300%;
+    letter-spacing: 4px;
+  }
+}
+
+.icon {
+  color:#e82d00;
 }
 
 
-/*----------------
+
+/*------------
+image carousel
+-------------*/
+.carousel {
+  margin-top: 1%;
+}
+
+/*------
+marquee
+------*/
+marquee {
+ height: 30px;	
+ overflow: hidden;
+ position: relative;
+ background: #000;
+ color: #fff;
+ border: 2px solid #fff;
+ text-align:center;
+ line-height: 30px;
+ font-family: Oswald;
+ font-size:100%;
+}
+
+@media screen and (min-height:1024px){
+  marquee {
+    height:60px;
+    line-height: 60px;
+    font-size:200%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  marquee {
+    height:60px;
+    line-height: 60px;
+    font-size:200%;
+  }
+}
+
+/*----------
  breadcrumb 
------------------*/
+------------*/
 .breadcrumb > li + li:before {
     content: ">>" !important;
     padding: 0 5px;
 }
 
-/*-------------
- Welcome 
--------------*/
-.welcome{
-  width: 100%;
-  height:50vh;
-  background: url("Brain.jpg") center center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin-top: 0;
-}
-
-.welcome:before {
-  content: "";
-  background: rgba(0, 0, 0, .8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.welcome .container {
-  z-index: 2;
-}
-
-.welcome h1 {
-  margin: 0 0 10px 0;
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 56px;
-  color: white;
-  font-family: Staatliches;
-  letter-spacing: 1px;
-}
-
-.welcome h2{
-  color:white;
-  margin-bottom: 50px;
-  font-size: 22px;
-  font-family: Spectral SC;
-}
-
-.welcome h2 span{
-  color: #6495ed;
-}
-
-.welcome .button {
-  font-family: Spectral SC;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  -o-border-radius: 4px;
-  transition: 0.5s;
-  border: 3px solid #6495ed;
-  color: #FFFFFF;
-}
-
-.welcome .button:hover, button:focus{
-  border-color: #FFFFFF;
-  background: #FFFFFF;
-}
-
+/*---
+lines
+----*/
 hr.line {
-  border:4px solid #6495ed;
+  border:4px solid #e82d00;
   border-radius:5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
@@ -268,79 +127,18 @@ hr.line {
 }   
 
 hr.line1 {
-  border:2px solid #6495ed;
+  border:2px solid #e82d00;
   border-radius:2px;
   -webkit-border-radius:2px;
   -moz-border-radius:2px;
   -o-border-radius: 2px;
 }   
 
-
-@media (min-width: 1024px) {
-  .welcome {
-    background-attachment: fixed;
-  }
-  .welcome h2{
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .welcome {
-    margin-bottom: -150px;
-    height:40vh;
-  }
-  .welcome h2 {
-    font-size:30px;
-  }
-}
-
-@media (max-height: 768px) {
-  .welcome {
-    margin-bottom: -150px;
-    height:80vh;
-  } 
-  .welcome h1 {
-    font-size:25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .welcome {
-    height: 80vh;
-  }
-  .welcome h1 {
-    font-size: 25px;
-    line-height: 36px;
-  }
-  .welcome h2 {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-height: 500px) {
-  .welcome {
-    height: 100vh;
-  }
-}
-
-/*--------------
- sections 
---------------*/
-section {
-  padding-top: 150px;
-  padding-bottom: 30px;
-  overflow: hidden;
-}
-
-
 .outline { 
   margin-top:2px;
   padding-left:2px;
   padding-right:2px;
-  border:2px solid #6495ed; 
+  border:2px solid #e82d00; 
   border-radius: 2px; 
   -moz-border-radius: 2px; 
   -webkit-border-radius: 2px; 
@@ -351,11 +149,9 @@ section {
 /*--------
 programmes 
 ----------*/
-.programmes {
-  margin-bottom: 30px;
-}
+
 .programmes-info {
-  border: 1px solid #6495ed;
+  border: 1px solid #e82d00;
   border-radius: 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
@@ -370,8 +166,32 @@ programmes
   -moz-border-radius:50%;
   -o-border-radius: 50%;
   height: 100px;
-  margin: -66px 0 20px 0;
+  margin: -50px 0 20px 0;
   vertical-align: top;
+}
+
+.programmes p {
+  font-family:Oswald;
+  font-size:100%;
+}
+
+.programmes h1 {
+  font-size:150%;
+  font-family: Spectral SC;
+  color:#21413c;
+  font-weight:600;
+}
+
+.programmes h2, h5{
+  font-size:150%;
+  color:#21413c;
+  font-weight:500;
+}
+
+.programmes a:hover{
+  text-decoration: none;
+  background:#ff7f50;
+  color:#fff;
 }
 
 .img-design {
@@ -379,25 +199,78 @@ programmes
   padding-right:15px;
 }
 
-.programmes p {
-  font-family:khand;
-  font-size:20px;
+.img-design > h5, p {
+  text-align: left;
 }
 
-.programmes h2,h1 {
-  color:#6495ed;
+.btn{ 
+  background-color: #e82d00;
+  color:#fff;
+  font-size:100%;
+}
+.btn:hover, .btn:focus, .btn.active {
+  background: #ff7f50;
+  color: #fff;
+		-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+		-ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+		-o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+		-webkit-transition: all 250ms ease-in-out 0s;
+		-moz-transition: all 250ms ease-in-out 0s;
+		-ms-transition: all 250ms ease-in-out 0s;
+		-o-transition: all 250ms ease-in-out 0s;
+		transition: all 250ms ease-in-out 0s;
 }
 
-.programmes a:hover, a:focus{
-  background: aqua;
-  text-decoration: none;
+@media screen and (min-height:1024px){
+  .programmes h1,h5 {
+    font-size:300%;
+  }
+  .programmes h2 {
+    padding-bottom:5%;
+    margin-top:2%;
+    font-size:300%;
+  }
+  .programmes a {
+    font-size:200%;
+  }
+  .programmes-info img {
+    height:200px;
+    margin: -100px 0 40px 0;
+  }
+  .programmes p {
+    font-size:200%;
+  }
+  .btn{
+    font-size:200%;
+    text-align: center;
+  }
 }
 
-/*-----------------
-programmes duration
-------------------*/
-.programmes-duration li {
-  font-family: khand;
+@media screen and (min-width: 768px){
+  .programmes h1,h5 {
+    font-size:300%;
+  }
+  .programmes h2 {
+    padding-bottom:5%;
+    margin-top:2%;
+    font-size:300%;
+  }
+  .programmes a {
+    font-size:200%;
+  }
+  .programmes-info img {
+    height:200px;
+    margin: -100px 0 40px 0;
+  }
+  .programmes p {
+    font-size:200%;
+  }
+  .btn{
+    font-size:200%;
+    text-align: center;
+  }
 }
 
 /*------
@@ -411,12 +284,12 @@ contact
 }
 
 .contact .info i {
-  font-size: 20px;
-  color: #6495ed;
+  font-size: 100%;
+  color: #e82d00;
   float: left;
   width: 44px;
   height: 44px;
-  background: #f0f8ff;
+  background:bisque;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,7 +299,7 @@ contact
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 150%;
   font-weight: 600;
   margin-bottom: 5px;
   color: #21413c;
@@ -435,8 +308,9 @@ contact
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
-  color: #6495ed;
+  font-size: 100%;
+  color: #e82d00;
+  font-family: Oswald;
 }
 
 .contact .info .email p {
@@ -444,7 +318,7 @@ contact
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #f0f8ff;
+  background: coral;
   color: #fff;
 }
 
@@ -465,7 +339,7 @@ contact
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 100%;
 }
 
 .contact .php-email-form .error-message {
@@ -513,7 +387,9 @@ contact
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 100%;
+  font-family: Oswald;
+  text-transform: uppercase;
 }
 
 .contact .php-email-form input {
@@ -525,7 +401,7 @@ contact
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #6495ed;
+  background: #e82d00;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -534,10 +410,8 @@ contact
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #6495ed;
+  background: #coral;
 }
-
-
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -557,24 +431,73 @@ contact
   }
 }
 
+@media screen and (min-height: 1024px){
+  .contact .php-email-form input, .contact .php-email-form textarea {
+				font-size:100%;
+  }
+  .contact .info i {
+    font-size:200%;
+    width:88px;
+    height:88px;
+  }
+  .contact .info h4 {
+    font-size:300%;
+    padding: 0 0 0 120px;
+  }
+  .contact .info p {
+    font-size:200%;
+    padding:0 0 0 120px;
+  }
+  .contact .php-email-form .validate {
+    font-size:200%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .contact .php-email-form input, .contact .php-email-form textarea {
+				font-size:100%;
+  }
+  .contact .info i {
+    font-size:200%;
+    width:88px;
+    height:88px;
+  }
+  .contact .info h4 {
+    font-size:300%;
+    padding: 0 0 0 120px;
+  }
+  .contact .info p {
+    font-size:200%;
+    padding:0 0 0 120px;
+  }
+  .contact .php-email-form .validate {
+    font-size:200%;
+  }
+}
+
 /*-----
 footer
 ------*/
+footer {
+  margin-top:2%;
+}
 
-.footer {
-  background-color: white;
-  padding-top: 0px;
-  color: #313030;
+.footer-copyright {
+  background: #000; 
+  padding: 5px 0;
+}
+
+.footer-copyright p { 
+  color: #fff;
+  margin: 2px 0 0;
+  font-size:100%;
 }
 
 #footer .social-links a {
-  font-size: 20px;
+  font-size: 100%;
   display: inline-block;
-  background: black;
-  color: #fff;
   line-height: 1;
-  padding: 10px 0;
-  margin-right: 4px;
+  padding-top:10px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -582,8 +505,402 @@ footer
   transition: 0.3s;
 }
 
+#footer .facebook {
+  color: #4267b2;
+}
+
+#footer .twitter {
+  color:#00acee;
+}
+#footer .instagram {
+  color:#405de6;
+}
+
 #footer .social-links a:hover {
-  background: cornflowerblue;
+  background: #ff7f50;
   text-decoration: none;
+  color:#fff;
+}
+
+@media screen and (min-height:1024px){
+  #footer .social-links a{
+    font-size:200%;
+    width:72px;
+    height:72px;
+    padding-top:20px;
+  }
+  .footer-copyright p {
+    font-size:150%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #footer .social-links a{
+    font-size:200%;
+    width:72px;
+    height:72px;
+    padding-top:20px;
+  }
+  .footer-copyright p {
+    font-size:150%;
+  }
+}
+
+
+/*---------
+primary nav
+----------*/
+.PrimaryNav {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.Nav-item {
+  background: #fff;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  text-align: center;
+}
+.Nav-item:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.Nav-item:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.Nav-item.is-active a {
+  opacity:1;
+  color:#e82d00;
+}
+.Nav-item a {
+  color: #121212;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 0;
+  text-decoration: none;
+  font-size: small;
+  opacity:0.5;
+  font-family: Oswald;
+}
+
+.Nav-item a:hover {
+  text-transform: uppercase;
+  transition: 1s ease-out;
+  opacity: 1;
+  color:#fff;
+}
+
+.with-indicator {
+  position: relative;
+  z-index: 0;
+}
+.with-indicator .Nav-item:last-child:before, .with-indicator .Nav-item:last-child:after {
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: left 1.3s ease;
+  transition: left 1.3s ease;
+}
+.with-indicator .Nav-item:last-child:before {
+  border: 6px solid transparent;
+  border-top-color: #e82d00;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 10%;
+  margin-left: -3px;
+}
+.with-indicator .Nav-item:last-child:after {
+  background: #e82d00;
+  top: -6px;
+  bottom: -6px;
+  left: 0;
+  width: 20%;
+  z-index: -1;
+}
+.with-indicator .Nav-item:nth-child(1).is-active ~ .Nav-item:last-child:after {
+  left: 0%;
+}
+.with-indicator .Nav-item:nth-child(1).is-active ~ .Nav-item:last-child:before {
+  left: 10%;
+}
+.with-indicator .Nav-item:nth-child(2).is-active ~ .Nav-item:last-child:after {
+  left: 20%;
+}
+.with-indicator .Nav-item:nth-child(2).is-active ~ .Nav-item:last-child:before {
+  left: 30%;
+}
+.with-indicator .Nav-item:nth-child(3).is-active ~ .Nav-item:last-child:after {
+  left: 40%;
+}
+.with-indicator .Nav-item:nth-child(3).is-active ~ .Nav-item:last-child:before {
+  left: 50%;
+}
+.with-indicator .Nav-item:nth-child(4).is-active ~ .Nav-item:last-child:after {
+  left: 60%;
+}
+.with-indicator .Nav-item:nth-child(4).is-active ~ .Nav-item:last-child:before {
+  left: 70%;
+}
+.with-indicator .Nav-item:nth-child(1):hover ~ .Nav-item:last-child:after {
+  left: 0% !important;
+}
+.with-indicator .Nav-item:nth-child(1):hover ~ .Nav-item:last-child:before {
+  left: 10% !important;
+}
+.with-indicator .Nav-item:nth-child(2):hover ~ .Nav-item:last-child:after {
+  left: 20% !important;
+}
+.with-indicator .Nav-item:nth-child(2):hover ~ .Nav-item:last-child:before {
+  left: 30% !important;
+}
+.with-indicator .Nav-item:nth-child(3):hover ~ .Nav-item:last-child:after {
+  left: 40% !important;
+}
+.with-indicator .Nav-item:nth-child(3):hover ~ .Nav-item:last-child:before {
+  left: 50% !important;
+}
+.with-indicator .Nav-item:nth-child(4):hover ~ .Nav-item:last-child:after {
+  left: 60% !important;
+}
+.with-indicator .Nav-item:nth-child(4):hover ~ .Nav-item:last-child:before {
+  left: 70% !important;
+}
+.with-indicator .Nav-item:last-child:hover:before, .with-indicator .Nav-item:last-child.is-active:before {
+  left: 90% !important;
+}
+.with-indicator .Nav-item:last-child:hover:after, .with-indicator .Nav-item:last-child.is-active:after {
+  left: 80% !important;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.PrimaryNav:before,
+.PrimaryNav:after {
+  content: " ";
+  display: table;
+}
+
+.PrimaryNav:after {
+  clear: both;
+}
+
+.toggle {
+  color: #fff;
+  font-family: Oswald;
+  text-align: center;
+}
+
+@media only screen and (min-height: 1024px){
+  .Nav-item a {
+ 		 display: inline;
+  		text-decoration: none;
+   font-size: 150%;
+   margin-top:1%;
+    padding-top:1%;
+		}
+  .icon {
+    font-size:150%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .Nav-item a {
+ 		 display: inline;
+  		text-decoration: none;
+    font-size: 150%;
+		}
+  .icon {
+    font-size:150%;
+  }
+}
+
+
+// How many menu items do we have?
+$menu-items: 5;
+
+// Colours
+$background-color: #121212;
+$indicator-color: #e82d00;
+
+// Transition Speed
+$transition-speed: 1.3s;
+
+// Dynamic Variables
+$width: (100/$menu-items) * 1%; // makes each item the right size
+$menu-items-loop-offset: $menu-items - 1; // the number of items in the menu
+
+
+// ======================================================
+// Step 1 - Making a Fixed Width Navigation
+// ======================================================
+
+.PrimaryNav {
+  @extend %cf; // clear the floats
+  list-style: none;
+  margin: 50px auto;
+  max-width: 720px; // As all measurements are using % this could be a flexible value.
+  padding: 0;
+  width: 100%;
+}
+
+.Nav-item {
+  background: #fff;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: $width; //dynamic width
+  text-align: center;
+
+  &:first-child {
+    border-radius: 3px 0 0 3px;
+  }
+
+  &:last-child {
+    border-radius: 0 3px 3px 0;
+  }
+
+  &.is-active a {
+    color: $indicator-color;
+  }
+
+  a {
+    color: $background-color;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: $indicator-color;
+    }
+  }
+}
+
+
+// ======================================================
+// Step 2 - Making the pseudo indicator
+// ======================================================
+
+.with-indicator {
+  position: relative;// the menu is "relative" to the absolute position last-child pseudo elements.
+  z-index: 0;
+
+  .Nav-item {
+    // ======================================================
+    // Step 2.1 - Making the indicator with the pseudo element.
+    // ======================================================
+    &:last-child {
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        transition: left #{$transition-speed} ease;
+      }
+      // Making the top CSS Triangle - learn more: https://css-tricks.com/animation-css-triangles-work/
+      &:before {
+        border: 6px solid transparent;
+        border-top-color: $indicator-color;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: ($width/2);
+        margin-left: -3px;
+      }
+      &:after {
+        background: $indicator-color;
+        top: -6px;
+        bottom: -6px;
+        left: 0;
+        width: $width;
+        z-index: -1;
+      }
+
+
+    }
+
+  }
+
+  @for $i from 1 through $menu-items-loop-offset {
+    // when the Nav item "is active", make the indicator line up with the navigation item.
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after {
+      left:($width*$i)-$width;
+    }
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
+    {
+      left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
+    }
+}
+
+// ======================================================
+// Step 3 - Making it move
+// ======================================================
+
+    // This could be in the same loop as the above but for the tutorial steps it's not
+    @for $i from 1 through $menu-items-loop-offset {
+    // We have to use !important to make the hovers overide if the last:child is the active or hovered
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
+      left:($width*$i)-$width !important;
+    }
+
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before{
+      left:($width*$i)+($width/2)-$width !important;
+    }
+      
+  }
+    
+    // this could be nested in the original .Nav-item
+    .Nav-item {
+        &:last-child {
+          // make sure the last-child talks to itself
+          &:hover, &.is-active {
+            &:before {
+             // we have to use important because the sibling selctor is more specific.
+              left: (100%-$width)+($width/2) !important;
+            }
+            &:after{
+              left: 100%-$width !important;
+            }
+          }        
+        }
+    }
+
+}
+
+
+// ======================================================
+// The usual Global resets
+// ======================================================
+
+*, *:before, *:after {
+  box-sizing: border-box; // learn more: https://css-tricks.com/box-sizing/
+}
+
+// Extending the https://css-tricks.com/micro-clearfix/
+%cf:before,
+%cf:after {
+    content: " ";
+    display: table;
+}
+%cf:after {
+    clear: both;
+}
+
+// Presentation Styling
+
+.toggle {
+    color: #fff;
+    font-family:Oswald;
+    text-align: center;
 }
 
