@@ -75,7 +75,7 @@ image carousel
 }
 
 @media screen and (min-height:1024px){
-  .image{
+  .carousel-item{
     height:50vh;
   }
 }
