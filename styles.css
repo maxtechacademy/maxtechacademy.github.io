@@ -75,7 +75,9 @@ image carousel
 }
 
 @media screen and (min-height:1024px){
-  .image:50vh;
+  .image{
+    height:50vh;
+  }
 }
 /*------
 marquee
