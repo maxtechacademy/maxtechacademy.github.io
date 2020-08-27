@@ -67,7 +67,6 @@ navbar .navbar-nav {
 }
 
 
-
 /*------------
 image carousel
 -------------*/
@@ -75,6 +74,9 @@ image carousel
   margin-top: 1%;
 }
 
+@media screen and (min-height:1024px){
+  .image:50vh;
+}
 /*------
 marquee
 ------*/
