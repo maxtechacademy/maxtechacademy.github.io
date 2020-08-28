@@ -10,12 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles/bootstrap.min.css"/>
   <link rel="stylesheet" href="icofont/icofont.min.css"/>
   <link rel="stylesheet" href="boxicons/css/boxicons.min.css"/>
-  <link rel="stylesheet" href="venobox.css"/>
-  <link rel="stylesheet" href="aos.css"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles/venobox.css"/>
+  <link rel="stylesheet" href="styles/aos.css"/>
+  <link rel="stylesheet" href="styles/flickity.min.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
   
     
   <!-- Google font -->
@@ -30,14 +31,13 @@
       <!--script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script -->
     <!--[endif]-->
     
-  
-</head>
+  </head>
 				
   <body>   
    
     <header>
-   		  <nav class="navbar navbar-expand-md navbar-light border-bottom bg-light navbar-custom">
-								<span id="Logo" onmouseover="change ()" onmouseleave="Change1 ()" class="navbar-brand mb-0 h1">MCA</span>
+   		  <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-custom">
+								<span id="Logo" onclick="change ()" class="navbar-brand mb-0 h1">MCA</span>
         <button class="navbar-toggler" 
           type="button" 
           data-toggle="collapse" 
@@ -52,16 +52,16 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             	<li class="nav-item">
-      					 		 <a class="nav-link" href="#"><span class="sr-only">(current)</span><i class="icofont-hat icon"></i> Scholarship</a>
+      					 		 <a class="nav-link text-light" href="#"><span class="sr-only">(current)</span><i class="icofont-hat icon"></i> Scholarship</a>
       							</li>
             	<li class="nav-item">
-      					 		 <a class="nav-link" href="#"><i class="icofont-mathematical-alt-1 icon"></i> Mathpedia</a>
+      					 		 <a class="nav-link text-light" href="#"><i class="icofont-mathematical-alt-1 icon"></i> Mathpedia</a>
       							</li>
      							 <li class="nav-item">
-       						 	<a class="nav-link" href="#"><i class="icofont-login icon"></i> Login</a>     							   
+       						 	<a class="nav-link text-light" href="#"><i class="icofont-login icon"></i> Login</a>     							   
      							 </li>           		 
      							 <li class="nav-item">
-       						 <a class="nav-link" href="#"><i class="icofont-address-book icon"></i> Sign-up</a>
+       						 <a class="nav-link text-light" href="#"><i class="icofont-address-book icon"></i> Sign-up</a>
      							 </li>                       
           </ul>
         </div>
@@ -74,33 +74,22 @@
     				<li class="Nav-item"> <i class="icofont-question icon"></i><a href="#">F.A.Qs</a></li>
    	 				<li class="Nav-item"> <i class="icofont-read-book-alt icon"></i><a href="contact.html">Contact</a></li>   
   					</ul>
-    
-    <div id="carousel" class="carousel slide" data-ride="carousel"> 				
-  				<div class="carousel-inner">
-    			<div class="carousel-item active carousel-1">
-      		<img class="d-block w-100 reduce" src="Ai.jpg" alt="First slide">
-    			  <div class="carousel-caption d-md-block">
-    						 </div>
-    			</div>
-    			<div class="carousel-item carousel-1">
-     		 <img class="d-block w-100 image" src="Pens.jpg" alt="Second slide">
-   			 </div>   		
- 				 </div>
- 					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Previous</span>
- 				 	</a>
- 				 <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Next</span>
-  				</a>
-				</div>	
-   		    		 
-   		<marquee behaviour="scroll" direction="left" scrollamount="3">  		  
+
+								    
+						<div class="carousel">
+ 						 <img src="Images/IMG-20200818-WA0002.jpg" alt="We maximize potentials" />
+  						<img src="Images/Pens.jpg" alt="Profesional turors" />
+  						<img src="Images/Program.jpg" alt="Globally recognized courses" />
+  						<img src="Images/anon.jpg" alt="Affordable fees" />
+  						<img src="Images/Hack.jpg" alt="Conducive environment" />
+  						<img src="Images/Ai.jpg" alt="Scholarship opportunity" />
+						</div>
+						<p class="caption">&nbsp;</p>  
+					    		 
+   			<marquee behaviour="scroll" direction="left" scrollamount="3">  		  
    		 		<strong>News: </strong>Scholarship application is now open to students who show exceptional academic qualities. Application portal will be open from 31st of august to 39th of august 3020. Interested student are advised to apply before 12:00AM 30th of august 2030. <a href="#">Apply here.</a> In order to improve the math culture in Nigeria thereby helping young Nigerians actualize their full potential, Maxtech Computer Academy has organized and online mathematics competition, with tokens to reward 3 best submissions in the competition. Click <a href="index.html">here</a> to learn more and apply for the competition.
-   		</marquee>
-   		 
-   	  </header>
+   			</marquee>  		 
+   </header>
     
  		 <main>      
  		   
@@ -109,16 +98,16 @@
     <div id="programmes" class="programmes">
       <div class="container-fluid">
         <hr class="line">
-        <h1 data-aos="fade-up" class="text-center">Available Programmes</h1>
+        <h1 class="text-center">Available Programmes</h1>
         <hr class="line">
-        <p data-aos="fade-up" >	We are happy to introduce the following programmes available at our academy. Feel free to browse our Course content and check the basic requirements if any, for each programme. Enjoy! .</p>
+        <p>	We are happy to introduce the following programmes available at our academy. Feel free to browse our Course content and check the basic requirements if any, for each programme. Enjoy! </p>
       </div>           
       
         <div class="container programmes" id="Web-Dev">   
           <h2 data-aos="fade-up" class="text-center">Web design and development</h2>           		
           <div class="programmes-info">
              <div class="img-design">
-             		 <img id="image" onmouseover="change ()" onmouseleave="Change1 ()" data-aos="fade-up" src="anon.jpg" alt="Web developer">
+             		 <img id="image" onmouseover="change ()" onmouseleave="Change1 ()" data-aos="fade-up" src="Images/anon.jpg" alt="Web developer">
                 <h5 data-aos="fade-up" >Overview</h5>
             				<p  data-aos="fade-up" > Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network services. In this programme, you will be taught the nitty-gritty of website development as well as softwares and hardwares involved in buiding an interactive and accessible world class website. </p>                                          
               		<ul>
@@ -133,7 +122,7 @@
       				  <h2  data-aos="fade-up" class="text-center">Android software development</h2>            		
          		 <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Application developer">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Application developer">
                <h5 data-aos="fade-up" >Overview</h5>
             				<p data-aos="fade-up">Android software development is the process by which applications are created for devices running the Android operating system. This programme will take you through a number of programming languages like Java and c++ and softwares employed in the development of android applications while explaining indepthly the brains behind every android application you see out there.</p>           		        		
               		<ul>
@@ -148,7 +137,7 @@
       			  <h2 data-aos="fade-up"   class="text-center">Graphics Design</h2>            
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="Graphics artist">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="Graphics artist">
                 <h5 data-aos="fade-up" >Overview</h5>
             					<p data-aos="fade-up"> Designing graphics goes beyond putting together texts and images and pasting them on a piece of paper. You will be trained on how to become a graphics designer who creates visual concepts, using computer softwares and by hand, to communicate ideas that inspire, inform, and captivate consumers and how to develop the overall layout and production design for applications such as advertisements, brochures, magazines, and reports.</p>          
               		<ul>
@@ -163,7 +152,7 @@
       				  <h2 data-aos="fade-up"  class="text-center">Computer programming</h2>           
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="Program.jpg" alt="Programmer">
+             		 <img data-aos="fade-up" src="Images/Program.jpg" alt="Programmer">
                	<h5 data-aos="fade-up" >Overview</h5>
             				<p data-aos="fade-up"> Computer coding or programming is the use of computer programming languages to give computers and machines instructions on what actions to perform. It is the way humans communicate with machines, and it allows us to create software like programs, operating systems, and mobile apps. With powerful programming languages like Python, C++ and Java at your fingertips, you can begin to create your own operating system or even a programming language more simpler than Python. </p>           		  
               		<ul>
@@ -178,7 +167,7 @@
       				  <h2  data-aos="fade-up" class="text-center">General Computer training</h2>           
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="anon.jpg" alt="MS word user">
+             		 <img data-aos="fade-up" src="Images/anon.jpg" alt="MS word user">
              		  <h5 data-aos="fade-up" >Overview</h5>
             					<p data-aos="fade-up" > In this programme, we offer different courses ranging from computer maintenance and software installations to using some general application softwares like the Microsoft office. We will train you to become an expert at word processing, rendering presentations with microsoft powerpoint, professional data analysis with microsoft excel, design invoices, receipts for companies, industries, shopping malls, supermarkets and the likes.</p>           		        				  
               		<ul>
@@ -193,7 +182,7 @@
       				  <h2  data-aos="fade-up" class="text-center">Electronics Repair and servicing</h2>            	
           <div class="programmes-info">
              <div class="img-design">
-             		 <img data-aos="fade-up" src="Service.jpg" alt="Motherboard service">
+             		 <img data-aos="fade-up" src="Images/Service.jpg" alt="Motherboard service">
                	<h5 data-aos="fade-up" >Overview</h5>
             				<p data-aos="fade-up"> This programme will take you through the fundamentals and building blocks of computer systems. This will aid your understanding of how computers operate to display images, graphics. You will be trained in identification and suitable as well as substitute replacement of broken electronics components such the transistor, resistor, inductor, capacitor and other components required for proper functioning of computer systems. The beauty of this lies in the fact that you can apply the knowledge acquired to other electronic devices like Television sets, radio, torches, phones and any electronic gadget you can think of. </p>         		        				  
               		<ul>
@@ -217,8 +206,7 @@
        															 <a href="#" class="twitter"><i class="icofont-twitter twitter" aria-label="twitter"></i></a>
        				 												<a href="#" class="facebook"><i class="icofont-facebook facebook" aria-label="facebook"></i></a>
        				 												<a href="#" class="instagram"><i class="icofont-instagram instagram" aria-label="instagram"></i></a>
-       	 													 </div>
- 
+       	 													 </div> 
 			                		<p class="text-center">Maxtech Computer Academy © 2020. All rights reserved.</p>
 		             		  	</div>
 		              		</div>
@@ -227,13 +215,14 @@
 		          </footer>
 
     <!-- Javascripts -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="jquery.sticky.js"></script>
-    <script src="venobox.min.js"></script>
-    <script src="aos.js"></script>
-				<script src="scripts.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/jquery.sticky.js"></script>
+    <script src="scripts/venobox.min.js"></script>
+    <script src="scripts/flickity.pkgd.min.js"></script>
+    <script src="scripts/aos.js"></script>    
+				<script src="scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         		            
     

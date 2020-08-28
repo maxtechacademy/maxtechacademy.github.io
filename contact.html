@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="icofont/icofont.min.css"/>
   <link rel="stylesheet" href="boxicons/css/boxicons.min.css"/>
   <link rel="stylesheet" href="styles/venobox.css"/>
+  <link rel="stylesheet" href="styles/flickity.min.css"/>
   <link rel="stylesheet" href="styles/aos.css"/>
   <link rel="stylesheet" href="styles/styles.css"/>
   
@@ -34,9 +35,9 @@
   </head>
 				
   <body>   
-   	<header>
-   		  <nav class="navbar navbar-expand-md navbar-light border-bottom navbar-custom">
-								<span id="Logo" class="navbar-brand mb-0 h1">MCA</span>
+   <header>
+   		  <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-custom">
+								<span id="Logo" onclick="change ()" class="navbar-brand mb-0 h1">MCA</span>
         <button class="navbar-toggler" 
           type="button" 
           data-toggle="collapse" 
@@ -51,16 +52,16 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             	<li class="nav-item">
-      					 		 <a class="nav-link" href="#"><span class="sr-only">(current)</span><i class="icofont-hat icon"></i> Scholarship</a>
+      					 		 <a class="nav-link text-light" href="#"><span class="sr-only">(current)</span><i class="icofont-hat icon"></i> Scholarship</a>
       							</li>
-            <li class="nav-item">
-      					 		 <a class="nav-link" href="#"><i class="icofont-mathematical-alt-1 icon"></i> Mathpedia</a>
+            	<li class="nav-item">
+      					 		 <a class="nav-link text-light" href="#"><i class="icofont-mathematical-alt-1 icon"></i> Mathpedia</a>
       							</li>
      							 <li class="nav-item">
-       						 	<a class="nav-link" href="#"><i class="icofont-login icon"></i> Login</a>     							   
-     							 </li>                
+       						 	<a class="nav-link text-light" href="#"><i class="icofont-login icon"></i> Login</a>     							   
+     							 </li>           		 
      							 <li class="nav-item">
-       						 <a class="nav-link" href="#"><i class="icofont-address-book icon"></i> Sign-up</a>
+       						 <a class="nav-link text-light" href="#"><i class="icofont-address-book icon"></i> Sign-up</a>
      							 </li>                       
           </ul>
         </div>
@@ -71,43 +72,31 @@
     				<li class="Nav-item"> <i class="icofont-tools-alt-2 icon"></i><a href="#">Services</a></li>
    				 <li class="Nav-item"> <i class="icofont-home icon"></i><a href="index.html">Home</a></li>
     				<li class="Nav-item"> <i class="icofont-question icon"></i><a href="#">F.A.Qs</a></li>
-   	 				<li class="Nav-item is-active"> <i class="icofont-read-book-alt icon"></i><a href="#">Contact</a></li>   
+   	 				<li class="Nav-item is-active"> <i class="icofont-read-book-alt icon"></i><a href="contact.html">Contact</a></li>   
   					</ul>
-    
-    <div id="carousel" class="carousel slide" data-ride="carousel"> 				
-  				<div class="carousel-inner">
-    			<div class="carousel-item active carousel-1">
-      		<img class="d-block w-100" src="Images/Ai.jpg" alt="First slide">
-    			  <div class="carousel-caption d-md-block">
-    						 </div>
-    			</div>
-    			<div class="carousel-item carousel-1">
-     		 <img class="d-block w-100 image" src="Images/Pens.jpg" alt="Second slide">
-   			 </div>   		
- 				 </div>
- 					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Previous</span>
- 				 	</a>
- 				 <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Next</span>
-  				</a>
-				</div>	
-   		  
-   	</header>
-   		 
-   		<marquee behaviour="scroll" direction="left" scrollamount="3">  		  
-   		 		<strong>News: </strong>Scholarship application is now open to students who show exceptional academic qualities. Application portal will be open from 31st of august to 39th of august 3020. Interested student are advised to apply before 12:00AM 30th of august 2030. <a href="#">Apply here.</a> In order to improve the math culture in Nigeria thereby helping young Nigerians actualize their full potential, Maxtech Computer Academy has organized and online mathematics competition, with tokens to reward 3 best submissions in the competition. Click <a href="index.html">here</a> to learn more and apply for the competition.
-   		</marquee>
 
+								    
+						<div class="carousel">
+ 						 <img src="Images/IMG-20200818-WA0002.jpg" alt="We maximize potentials" />
+  						<img src="Images/Pens.jpg" alt="Profesional turors" />
+  						<img src="Images/Program.jpg" alt="Globally recognized courses" />
+  						<img src="Images/anon.jpg" alt="Affordable fees" />
+  						<img src="Images/Hack.jpg" alt="Conducive environment" />
+  						<img src="Images/Ai.jpg" alt="Scholarship opportunity" />
+						</div>
+						<p class="caption">&nbsp;</p>  
+					    		 
+   			<marquee behaviour="scroll" direction="left" scrollamount="3">  		  
+   		 		<strong>News: </strong>Scholarship application is now open to students who show exceptional academic qualities. Application portal will be open from 31st of august to 39th of august 3020. Interested student are advised to apply before 12:00AM 30th of august 2030. <a href="#">Apply here.</a> In order to improve the math culture in Nigeria thereby helping young Nigerians actualize their full potential, Maxtech Computer Academy has organized and online mathematics competition, with tokens to reward 3 best submissions in the competition. Click <a href="index.html">here</a> to learn more and apply for the competition.
+   			</marquee>  		 
+   </header>
     
      <div id="contact-top" class="programmes">
       			<div class="container-fluid">
         		<hr class="line">
-        		<h1 data-aos="fade-up" class="text-center"> Contact us </h1>
+        		<h1 class="text-center"> Contact us </h1>
         		<hr class="line">
-        		<p data-aos="fade-up"  class="text-left">Feel free to visit us at our head office or send us a message via whatsapp or via the email form provided below.</p>
+        		<p  class="text-left">Feel free to visit us at our head office or send us a message via whatsapp or via the email form provided below.</p>
       			</div> 
       		</div>
 
@@ -203,6 +192,7 @@
     <script src="scripts/jquery.easing.min.js"></script>
     <script src="scripts/jquery.sticky.js"></script>
     <script src="scripts/venobox.min.js"></script>
+    <script src="scripts/flickity.pkgd.min.js"></script>
     <script src="scripts/aos.js"></script>
 				<script src="scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
