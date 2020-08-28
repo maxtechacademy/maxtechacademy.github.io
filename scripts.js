@@ -67,3 +67,20 @@ function Change1 (){
   document.getElementById ("image").innerHTML="MCA";
 }
 
+
+
+var flkty = new Flickity( '.carousel', {
+  imagesLoaded: true,
+  percentPosition: false,
+		wrapAround: true,
+  autoPlay: 5000,
+		pauseAutoPlayOnHover: false
+});
+
+var caption = document.querySelector('.caption');
+
+flkty.on( 'select', function() {
+  // set image caption using img's alt
+  caption.textContent = flkty.selectedElement.alt;
+});
+
