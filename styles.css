@@ -29,6 +29,12 @@ nav bar
 background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=e82d00');
 }
 
+@media screen and (min-width:768px){
+  .navbar-toggler-icon{
+    font-size:200%;
+  }
+}
+
 navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -70,16 +76,16 @@ navbar .navbar-nav {
   color:#e82d00;
 }
 
-
+/* flickty carousel */
 .carousel {
   background: #fff;
+  margin-top: 1%;
 }
 
 .carousel img {
   display: block;
   height: 200px;
-  width: 80%;
-  padding-right:10px;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -98,21 +104,9 @@ navbar .navbar-nav {
   bottom: -60px;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel img {
-    height: 500px;
-    border-radius:10px;
-  }
-  .caption{
-    font-size:200%;
-  }
-  
-}
-
 .flickity-page-dots {
   bottom: -60px;
 }
-
 
 .flickity-button:focus {  
   outline: none; 
@@ -122,7 +116,7 @@ navbar .navbar-nav {
 .flickity-page-dots {
   bottom: 0px;
 }
-/* white circles */
+
 .flickity-page-dots .dot {
   width: 12px;
   height: 12px;
@@ -130,13 +124,35 @@ navbar .navbar-nav {
   background: transparent;
   border: 2px solid #fff;
 }
-/* fill-in selected dot */
+
 .flickity-page-dots .dot.is-selected {
   background: #e82d00;
 }
 
-.carousel {
-  margin-top: 1%;
+@media screen and ( min-height: 1024px ) {
+  .carousel img {
+    height: 500px;
+    border-radius:10px;
+  }
+  .caption{
+    font-size:200%;
+  }
+  .flickity-button{
+    font-size:200%;
+  } 
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 500px;
+    border-radius:10px;
+  }
+  .caption{
+    font-size:200%;
+  }
+  .flickity-button{
+    font-size:200%;
+  } 
 }
 
 /*------
@@ -225,10 +241,10 @@ programmes
   text-align: center;
 }
 .programmes-info img {
-  border-radius: 50%;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  -o-border-radius: 50%;
+  border-radius: 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius: 5px;
   height: 100px;
   margin: -50px 0 20px 0;
   vertical-align: top;
@@ -260,8 +276,8 @@ programmes
 }
 
 .img-design {
-  padding-left:15px;
-  padding-right:15px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 .img-design > h5, p {
@@ -301,6 +317,10 @@ programmes
     font-size:200%;
   }
   .programmes-info img {
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
     height:200px;
     margin: -100px 0 40px 0;
   }
@@ -326,6 +346,10 @@ programmes
     font-size:200%;
   }
   .programmes-info img {
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
     height:200px;
     margin: -100px 0 40px 0;
   }
@@ -498,7 +522,7 @@ contact
 
 @media screen and (min-height: 1024px){
   .contact .php-email-form input, .contact .php-email-form textarea {
-				font-size:100%;
+				font-size:150%;
   }
   .contact .info i {
     font-size:200%;
@@ -520,7 +544,7 @@ contact
 
 @media screen and (min-width: 768px){
   .contact .php-email-form input, .contact .php-email-form textarea {
-				font-size:100%;
+				font-size:150%;
   }
   .contact .info i {
     font-size:200%;
@@ -641,10 +665,11 @@ primary nav
 .Nav-item.is-active a {
   opacity:1;
   color:#e82d00;
+  text-transform:uppercase;
 }
 .Nav-item a {
   color: #121212;
-  display: block;
+  display: inline;
   padding-top: 5px;
   padding-bottom: 0;
   text-decoration: none;
@@ -764,20 +789,19 @@ primary nav
   text-align: center;
 }
 
-@media only screen and (min-height: 1024px){
+@media screen and (min-height: 1024px){
   .Nav-item a {
- 		 display: inline;
   		text-decoration: none;
    font-size: 150%;
    margin-top:1%;
-    padding-top:1%;
+   padding-top:1%;
 		}
   .icon {
     font-size:150%;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media screen and (min-width: 768px){
   .Nav-item a {
  		 display: inline;
   		text-decoration: none;
