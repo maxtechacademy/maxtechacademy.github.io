@@ -665,7 +665,6 @@ primary nav
 .Nav-item.is-active a {
   opacity:1;
   color:#e82d00;
-  text-transform:uppercase;
 }
 .Nav-item a {
   color: #121212;
